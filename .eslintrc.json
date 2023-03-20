@@ -41,6 +41,8 @@
     "eslint@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+
     "n/handle-callback-err": "off",
     "plugin:react/jsx-runtime": "off",
     "react-hooks/rules-of-hooks": "off",

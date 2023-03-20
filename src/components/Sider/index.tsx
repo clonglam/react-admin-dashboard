@@ -8,11 +8,6 @@ interface Props {
   open: boolean
 }
 
-// interface IMenu {
-//   openKeys: string[]
-//   selectedKey: string
-// }
-
 const renderMenuItem = (item: IFMenu, isSidebarOpen: boolean): JSX.Element => (
   <Link
     to={(item.route ?? item.key) + (item.query ?? '')}

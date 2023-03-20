@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaAddressBook, FaCalendar, FaEnvelope } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { SiReactquery } from 'react-icons/si'
+import { SiReactquery, SiReacttable } from 'react-icons/si'
 
 const Icons = {
   'fa-address-book': FaAddressBook,
@@ -9,6 +9,7 @@ const Icons = {
   'fa-envelope': FaEnvelope,
   hamburger: GiHamburgerMenu,
   reactQueryIcon: SiReactquery,
+  reactTableIcon: SiReacttable,
   // add more icons here
 }
 

@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import AllComponents from '../components'
 import routesConfig from './config'
 import type { IFMenu, IFMenuBase } from './config'
-import ErorrPage from '../components/pages/ErorrPage'
+import ErorrPage from '../components/ErorrPage'
 
 const Routers: React.FC = () => {
   const createMenu = (meunList: IFMenu): JSX.Element => {

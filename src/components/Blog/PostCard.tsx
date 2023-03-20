@@ -10,13 +10,13 @@ const PostCard = (props: Props): JSX.Element => {
     <Link
       to={`/blog/${id}`}
       key={id}
-      className="post"
+      className="post-card"
       onClick={() => {
         console.log('id', id)
       }}
     >
-      <h3>{title}</h3>
-      <p>{body}</p>
+      <h3 className="post-card-title">{title}</h3>
+      <p className="post-card-content">{body}</p>
     </Link>
   )
 }

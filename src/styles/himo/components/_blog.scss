@@ -1,20 +1,41 @@
 @use 'sass:math';
 
 .blog {
-  h1 {
-    font-size: calc(10px + 2vmin);
-  }
-}
-
-.posts {
-  grid-template-columns: 2;
-  .post {
-    display: block;
-    padding: $base-padding;
-    border: $base-border-thickness solid #eee;
-    box-shadow: $base-box-shadow;
-    border-radius: math.div($base-border-radius, 4);
-    width: 100%;
-    height: 180px;
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    gap: $base-padding * 2 $base-padding;
+    .post-card {
+      display: block;
+      padding: $base-padding 0;
+      border: math.div($base-border-thickness, 8) solid #eee;
+      border-radius: math.div($base-border-radius, 4);
+      .divider {
+        border-bottom: 1px solid #eee;
+      }
+      .post-card-title {
+        padding: 0 $base-padding math.div($base-padding, 3) $base-padding;
+        font-size: $font-size-lg;
+      }
+      .post-card-content {
+        font-size: $font-size-md;
+        padding: $base-padding;
+      }
+    }
+    // .post {
+    //   display: block;
+    //   padding: $base-padding;
+    //   border: $base-border-thickness solid #eee;
+    //   box-shadow: $base-box-shadow;
+    //   border-radius: math.div($base-border-radius, 4);
+    //   width: 100%;
+    //   height: 180px;
+    // }
   }
 }
